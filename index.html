@@ -113,17 +113,23 @@ pointer-events:none;
 <body>
 
 <!-- Background Music -->
-<iframe width="0" height="0"
-src="https://www.youtube.com/watch?v=aZg8WFUzmfA&list=RDaZg8WFUzmfA&start_radio=1"
-allow="autoplay">
-</iframe>
+<audio id="bgMusic" loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener("click", function() {
+document.getElementById("bgMusic").play();
+}, { once: true });
+</script>
+
 
 <canvas id="fireworks"></canvas>
 
 <div class="container">
 <h1>Adeola 💖<br>Will You Be My Girlfriend?</h1>
 
-<img src="https://www.tiktok.com/@de0la/photo/7581564006444436757" alt="YOU">
+<video src="adeolaweb.mov" alt="MI AMOR">
 
 <button id="yesBtn">Yes, Obviously 😍</button>
 <button id="noBtn">No 🙈</button>
